@@ -1,0 +1,42 @@
+@charset "UTF-8";
+ul {
+	font-size: 13px;
+}
+li {
+	line-height: 1.8;
+}
+span.pdfAfter, span.docAfter, span.xlsAfter, span.zipAfter {
+	margin-left: 3px;
+	padding: 2px 0 0 18px;
+	background: url(./icon.png) no-repeat top left;
+}
+span.pdfBefore, span.docBefore, span.xlsBefore, span.zipBefore {
+	padding: 2px 18px 0 0;
+	background-image: url(./icon.png);
+	background-repeat: no-repeat;
+}
+span.pdfAfter, span.pdfBefore {
+	background-position: 0 -166px;
+	width: 16px;
+	height: 17px;
+}
+span.docAfter, span.docBefore {
+	background-position: 0 0;
+	width: 15px;
+	height: 16px;
+}
+span.xlsAfter, span.xlsBefore {
+	background-position: 0 -333px;
+	width: 15px;
+	height: 16px;
+}
+span.zipAfter, span.zipBefore {
+	background-position: 0 -499px;
+	width: 16px;
+	height: 17px;
+}
+li.noIcon span {
+	background: none;
+	margin: 0;
+	padding: 0;
+}

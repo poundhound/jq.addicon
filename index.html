@@ -1,0 +1,44 @@
+<html dir="ltr" lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>jquery.addicon.js</title>
+<link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+</head>
+
+<body>
+
+<ul class="after">
+<li><a href="hoge.pdf">PDF Icon</a></li>
+<li><a href="hoge.doc">DOC Icon</a></li>
+<li><a href="hoge.xls">XLS Icon</a></li>
+<li><a href="hoge.zip">ZIP Icon</a></li>
+<li class="noIcon"><a href="hoge.zip">ZIP Icon(No Icon)</a></li>
+</ul>
+
+<ul class="before">
+<li><a href="hoge.pdf">PDF Icon</a></li>
+<li><a href="hoge.doc">DOC Icon</a></li>
+<li><a href="hoge.xls">XLS Icon</a></li>
+<li><a href="hoge.zip">ZIP Icon</a></li>
+<li class="noIcon"><a href="hoge.zip">ZIP Icon(No Icon)</a></li>
+</ul>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script src="./jquery.addicon.js"></script>
+<script>
+$(function() {
+	$.fn.addIcon({
+		elem: 'ul.after a[href$=".pdf"], ul.after a[href$=".doc"], ul.after a[href$=".xls"], ul.after a[href$=".zip"]',
+		iconPos: 'after',
+		noIconClass: '.noIcon'
+	});
+	
+	$.fn.addIcon({
+		elem: 'ul.before a[href$=".pdf"], ul.before a[href$=".doc"], ul.before a[href$=".xls"], ul.before a[href$=".zip"]',
+		iconPos: 'before',
+		noIconClass: '.noIcon'
+	});
+});
+</script>
+</body>
+</html>
